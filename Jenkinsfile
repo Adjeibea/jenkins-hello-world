@@ -17,7 +17,7 @@ pipeline {
         stage('Build') {
             steps{
             // Get some code from a Github repository
-            git branch: 'main', changelog: false, poll: false, url: 'https://github.com/sidd-harth/jenkins-hello-world.git'
+            //git branch: 'main', changelog: false, poll: false, url: 'https://github.com/sidd-harth/jenkins-hello-world.git'
 
             // Run Maven Package CMD
             sh 'mvn clean package -DskipTests=true'
